@@ -10,5 +10,7 @@ app.listen(PORT, () => {
   console.log(`listening on ${PORT}...`);
 });
 
+app.use(express.json());
+
 app.use("/", indexRouter);
 app.use("/new", indexRouter);
